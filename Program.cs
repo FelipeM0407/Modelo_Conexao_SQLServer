@@ -39,6 +39,9 @@ namespace Modelo_Conexao_Banco
                     Console.WriteLine("Sobrenome: " + dr["sobrenome"].ToString());
                     Console.WriteLine("Idade: " + Convert.ToInt32(dr["idade"]));
                 };
+                
+                //Limpeza DataReader
+                dr.Close();
 
             }
             catch (Exception e)
